@@ -22,7 +22,7 @@ public class UncheckedException
 
         try
         {
-            cociente = numero1/numero2; //no supe como validar la variable de cociente.
+            cociente = numero1/numero2;
         }catch (ArithmeticException ex)
         {
             System.err.println(ex);
@@ -30,7 +30,8 @@ public class UncheckedException
         }finally
         {
             if (numero2 != 0)
-                System.out.printf("Division entre %d y %d, es %d", numero1, numero2, numero1/numero2);
+                cociente = numero1/numero2
+                System.out.printf("Division entre %d y %d, es %d", numero1, numero2, cociente);
             if (numero2 == 0)
                 System.out.printf("Division entre %d y %d", numero1, numero2);
         }
