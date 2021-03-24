@@ -22,7 +22,7 @@ public class UncheckedException
 
         try
         {
-            cociente = numero1/numero2;
+            cociente = numero1/numero2; //no supe como validar la variable de cociente.
         }catch (ArithmeticException ex)
         {
             System.err.println(ex);
