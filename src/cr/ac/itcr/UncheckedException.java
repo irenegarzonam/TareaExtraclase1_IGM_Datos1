@@ -29,7 +29,10 @@ public class UncheckedException
             System.err.println("Es imposible dividir entre 0");
         }finally
         {
-            System.out.printf("Division entre %d y %d", numero1, numero2);
+            if (numero2 != 0)
+                System.out.printf("Division entre %d y %d, es %d", numero1, numero2, numero1/numero2);
+            if (numero2 == 0)
+                System.out.printf("Division entre %d y %d", numero1, numero2);
         }
     }
 }
