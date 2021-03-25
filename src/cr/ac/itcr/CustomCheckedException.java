@@ -1,5 +1,8 @@
+//ejemplo de un custom checked exception
+
 package cr.ac.itcr;
 
+//Bibliotecas
 import java.util.Scanner;
 
 class MiExcepcion2 extends Exception
@@ -14,6 +17,7 @@ public class CustomCheckedException
 {
     public static void main(String args[])
     {
+        //crea objet)o scanner para obtener ventana de comandos
         Scanner entrada = new Scanner(System.in);
 
         int estatura;
@@ -25,7 +29,7 @@ public class CustomCheckedException
 
         try
         {
-            if (estatura < 150)
+            if (estatura < 150) //si la persona es menor a esa estatura, dara un mensaje de error.
                 throw new MiExcepcion2();
         }catch(MiExcepcion2 ex)
         {
