@@ -1,3 +1,4 @@
+//ejemplo de Custom Unchecked Exception
 package cr.ac.itcr;
 
 import java.util.Scanner;
@@ -24,13 +25,14 @@ public class CustomUncheckedException
     Fecha de ultima modificacion: 24/03/2021
 
 
-    Entradas:
-    Restricciones:
-    Salidas:
+    Entradas: interger (edad)
+    Restricciones: edad debe ser un interger y si estae es menor a 18, dara un mensaje MiExcepcion.
+    Salidas: texto
     ###########################################################
      */
     public static void main(String args[])
     {
+        //crea objet)o scanner para obtener ventana de comandos
         Scanner entrada = new Scanner( System.in );
 
         int edad;

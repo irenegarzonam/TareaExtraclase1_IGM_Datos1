@@ -26,9 +26,12 @@ public class UncheckedException
     Fecha de ultima modificacion: 24/03/2021
 
 
-    Entradas:
-    Restricciones:
-    Salidas:
+    Entradas:intergers(numero1 y numero2)
+    Restricciones:numero1 y numero2 deben ser intergers.
+                  numero2 debe ser != 0 para que te de el
+                  cociente.
+    Salidas: cociente de numero1 y numero2
+             mensaje de Excepcion si numero2 es 0
     ###########################################################
      */
     public static void main(String args[])

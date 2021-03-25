@@ -27,9 +27,9 @@ public class TryCatchCheckedException
     Fecha de ultima modificacion: 24/03/2021
 
 
-    Entradas:
-    Restricciones:
-    Salidas:
+    Entradas: file path
+    Restricciones: ---
+    Salidas: texto
     ###########################################################
      */
     public static void main(String args[])
@@ -40,29 +40,32 @@ public class TryCatchCheckedException
             File documento = new File("prueba.txt");
             FileWriter escritor = new FileWriter(documento);
             BufferedWriter buffer = new BufferedWriter(escritor);
-            buffer.write("Hola!");
+            buffer.write("Hola!"); // se escriben las lineas del documento despues de crearlo
             buffer.newLine();
             buffer.write("Soy un ejemplo de una excepcion verificada");
             buffer.close();
             escritor.close();
-        } catch (IOException ex) {
-            System.out.println("Problema en la creacion del documento");
-        }
+        } //fin de try
+        catch (IOException ex) //Se atrapa la excepcion
+        {
+            System.out.println("Problema en la creacion del documento"); //mensaje de error para el usuario
+        }//fin de catch
         //Lectura del Documento
         try
         {
             FileReader lector = new FileReader(new File("prueba.txt")); //Ejemplo extra, si en vez de prueba.txt, pongo otro .txt, mi ctach me va a mandar un mensaje donde me dira donde esta el problema
             BufferedReader lectorbuffer = new BufferedReader(lector);
             String renglon = lectorbuffer.readLine();
-            while (renglon!=null)
+            while (renglon!=null) //mientras elrenglon exista se lee
             {
                 System.out.println(renglon);
                 renglon = lectorbuffer.readLine();
-            }
-        } catch (IOException ex)
+            }//fin de while
+        } //fin de try
+        catch (IOException ex)
         {
-            System.out.println("Problemas con la lectura del documento");
+            System.out.println("Problemas con la lectura del documento");//mensaje de error para el usuario
             System.out.println(ex.getMessage());
-        }
-    }
-}
+        }//fin de catch
+    }//fin de main
+}//fin de TryCatchCheckedException

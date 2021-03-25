@@ -35,9 +35,10 @@ public class CustomCheckedException
     Fecha de ultima modificacion: 24/03/2021
 
 
-    Entradas:
-    Restricciones:
-    Salidas:
+    Entradas: interger (estatura)
+    Restricciones: estatura debe serun interger, si estatura es
+                   menor a 150 da mensaje de MiExcepcion2
+    Salidas: texto
     ###########################################################
      */
     public static void main(String args[])
@@ -49,20 +50,23 @@ public class CustomCheckedException
 
         System.out.println("Linea de espera: Montaña Rusa");
 
-        System.out.print("Digita tu estatura en numeros (centimetros): ");
-        estatura = entrada.nextInt();
+        System.out.print("Digita tu estatura en numeros (centimetros): ");// indicador
+        estatura = entrada.nextInt(); // lee el numero de estatura
 
         try
         {
             if (estatura < 150) //si la persona es menor a esa estatura, dara un mensaje de error.
                 throw new MiExcepcion2();
-        }catch(MiExcepcion2 ex)
+        }//fin de try
+        catch(MiExcepcion2 ex)
         {
             System.err.print(ex);
             System.out.print("Para poder ingresar a la atraccion tu estatura debe de estar entre los 150 cm");
-        }finally {
+        }//fin de catch
+        finally
+        {
             System.out.println("\nPARQUE DE DIVERSIONES\n...está lleno de emociones");
-        }
-    }
-}
+        }//fin de finally
+    }//fin de  main
+}//fin de CustomCheckedException
 

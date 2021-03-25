@@ -31,16 +31,18 @@ public class CheckedException
     Fecha de ultima modificacion: 24/03/2021
 
 
-    Entradas:
-    Restricciones:
-    Salidas:
+    Entradas: File path
+    Restricciones: ---
+    Salidas: ---
     ###########################################################
      */
     public void LeerDoc() throws FileNotFoundException
     {
         File documento = new File("C:\\prueba\\prueba.txt");//abrir texto
-        FileReader lector = new FileReader(documento);
+        FileReader lector = new FileReader(documento); //lee texto
+
     }
+
     // FileNotFoundException deriva de IOException
     public void LeerDocVersion2() throws IOException
     {
