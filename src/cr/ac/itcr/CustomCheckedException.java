@@ -15,6 +15,31 @@ class MiExcepcion2 extends Exception
 
 public class CustomCheckedException
 {
+    /*
+    ###########################################################
+    Instituto Tecnologico de Costa Rica
+
+    Area Academica Ingenieria en Computadores
+
+
+    Curso: Algoritmos y estructuras de Datos 1
+
+    Lenguaje: Java 15.0.2
+
+    Profesor: Jose Isaac Ramirez Herrera
+
+    Autora: Irene Garzona Moya 2020426009
+
+    Version: 1.0
+
+    Fecha de ultima modificacion: 24/03/2021
+
+
+    Entradas:
+    Restricciones:
+    Salidas:
+    ###########################################################
+     */
     public static void main(String args[])
     {
         //crea objet)o scanner para obtener ventana de comandos
